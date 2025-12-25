@@ -43,6 +43,7 @@
     "noEmitOnError": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "src/app.ts"
   ]
 }
