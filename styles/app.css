@@ -1,0 +1,9 @@
+@import './pages/header.css';
+@import './pages/main.css';
+@import './pages/footer.css';
+
+/* Add new global styles or imports here */
+body {
+    margin: 0;
+    padding: 0;
+}

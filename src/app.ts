@@ -1,7 +1,7 @@
-import { header } from './header.js';
-import { main } from './main.js';
+import { header } from './pages/header.js';
+import { main } from './pages/main.js';
 const app = document.getElementById('app');
-import { footer } from './footer.js';
+import { footer } from './pages/footer.js';
 
 
 
