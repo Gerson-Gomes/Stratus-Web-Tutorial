@@ -1,4 +1,10 @@
-const titulo = document.querySelector('h1') as HTMLHeadingElement;
-titulo.innerText = "Texto alterado via TypeScript Manual!";
+const app = document.getElementById('app');
+const header = document.createElement('header');
+const main = document.createElement('main');
+const footer = document.createElement('footer');
 
-console.log("O TS está funcionando");
+app?.appendChild(header);
+app?.appendChild(main);
+app?.appendChild(footer);
+
+
