@@ -1,19 +1,62 @@
+/* Professional Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark-blue);
+    /* Deep Blue from palette */
+    color: var(--white);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--ice-blue);
+    /* Light Blue accent */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
 nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 30px;
     padding: 0;
     margin: 0;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
 }
 
-header {
-    padding: 1rem;
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #dee2e6;
+nav a:hover {
+    color: var(--ice-blue);
+    /* Medium Blue hover */
+    border-bottom-color: var(--ice-blue);
+}
+
+/* Adjust body to prevent content from hiding behind fixed header */
+body {
+    padding-top: 80px;
+    /* Adjust based on header height */
 }

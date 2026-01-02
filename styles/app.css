@@ -2,6 +2,15 @@
 @import './pages/main.css';
 @import './pages/footer.css';
 
+:root {
+
+    --dark-blue: #13315c;
+    --light-blue: #7692ff;
+    --medium-blue: #134074;
+    --ice-blue: #abd2fa;
+    --white: #ffffff;
+}
+
 /* Add new global styles or imports here */
 body {
     margin: 0;
